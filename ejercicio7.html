@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio7</title>
+</head>
+<body>
+    <form>
+        Indica los deportes que practicas:<br>
+        <input type="checkbox" id="checkbox1">Fútbol<br>
+        <input type="checkbox" id="checkbox2">Básquet<br>
+        <input type="checkbox" id="checkbox3">Tenis<br>
+        <input type="button" value="Controlar" onClick="BotonesElegidos()">
+    </form>
+
+    <script>
+        function BotonesElegidos() {
+            let deportes = "";
+            if (document.getElementById("checkbox1").checked) {
+                deportes = deportes + "Fútbol ";
+            }
+            if (document.getElementById("checkbox2").checked) {
+                deportes = deportes + "Básket ";
+            }
+            if (document.getElementById("checkbox3").checked) {
+                deportes = deportes + "Tenis";
+            }
+            alert("Los deportes seleccionados son: " + deportes);
+        }
+    </script>
+
+</body>
+</html>

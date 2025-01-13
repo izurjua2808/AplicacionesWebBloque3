@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio4</title>
+</head>
+<body>
+
+    <form>
+        <p>Nombre: <input type="text" id="nombre"></p>
+        <p>Apellido: <input type="text" id="apellido"></p>
+        <p><input type="button" value="Concatenar nombre y apellido" onClick="JuntarNombre()"></p>
+        <p><input type="text" id="resultado"></p>
+    </form>
+
+    <script>
+        function JuntarNombre() {
+            let nom = document.getElementById("nombre").value;
+            let ape = document.getElementById("apellido").value;
+            document.getElementById("resultado").value = nom +   ape;
+        }
+    </script>
+
+</body>
+</html>

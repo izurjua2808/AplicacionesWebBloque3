@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio5</title>
+</head>
+<body>
+    <form>
+        Pizzas: <select id="pizza" onChange="mostrarPrecioPizza()">
+                    <option value=""></option>
+                    <option value="7,99€">Jamón York y Queso</option>
+                    <option value="8,99€">Peperoni</option>
+                    <option value="11,99€">4 Quesos</option>
+                    <option value="8,99€">Barbacoa</option>
+                    <option value="10,99€">Atún y bacon</option>
+                </select></p>
+        Precio: <input type="text" id="mensaje"></p>
+    </form>
+
+    <script>
+        function mostrarPrecioPizza() {
+            document.getElementById("mensaje").value =
+                document.getElementById("pizza").options[document.getElementById("pizza").selectedIndex].value;
+        }
+    </script>
+
+</body>
+</html>

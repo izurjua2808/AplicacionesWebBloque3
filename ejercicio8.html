@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio8</title>
+</head>
+<body>
+    <form>
+        <p>¿Eres mayor de edad?</p>
+        <p><input type="radio" id="opcionsi" name="edad">Si</p>
+        <p><input type="radio" id="opcionno" name="edad">No</p>
+        <p><input type="button" value="Verificar" onClick="verificar()"></p>
+    </form>
+
+    <script>
+        function verificar() {
+            if (document.getElementById("opcionsi").checked) {
+                alert("Puedes ingresar");
+            }
+            if (document.getElementById("opcionno").checked) {
+                alert("No puedes ingresar");
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio6</title>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio6</title>
+</head>
+<body>
+    <form>
+          Cantidad: <input type="text" id="cant"><br>
+          Pizza: <select id="Pizza" onchange="calcularprecio()">
+            <option value="6">4 Quesos</option>
+            <option value="8">Jamón York y Queso</option>
+            <option value="10">Barbacoa</option>
+            <option value="12">Peperoni</option>
+          </select><br>
+          <input type="button" id="botontotal" value="total" onclick="calcularprecio()"><br>
+        
+          Precio Total:<input type="text" id="total"><br>
+         
+    </form>
+
+    <script>
+        function calcularprecio()
+        {
+              
+            var seleccion=document.getElementById("Pizza");
+            var cantidad=document.getElementById("cant").value
+            var precioPizza=document.getElementById("PrecioTotal")
+            var precioSeleccionado=seleccion.options[seleccion.selectedIndex].value;
+            var total= cantidad * precioSeleccionado
+            document.getElementById("total").value=total;
+        }
+
+    </script>
+</body>
+</html>
+</html>
