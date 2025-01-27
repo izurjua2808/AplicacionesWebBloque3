@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ejercicio7</title>
+    <script src="script7b3.js" defer></script>
 </head>
 <body>
     <form>
@@ -14,21 +15,7 @@
         <input type="button" value="Controlar" onClick="BotonesElegidos()">
     </form>
 
-    <script>
-        function BotonesElegidos() {
-            let deportes = "";
-            if (document.getElementById("checkbox1").checked) {
-                deportes = deportes + "Fútbol ";
-            }
-            if (document.getElementById("checkbox2").checked) {
-                deportes = deportes + "Básket ";
-            }
-            if (document.getElementById("checkbox3").checked) {
-                deportes = deportes + "Tenis";
-            }
-            alert("Los deportes seleccionados son: " + deportes);
-        }
-    </script>
+
 
 </body>
 </html>

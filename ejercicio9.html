@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ejercicio9</title>
+    <script src="script9b3.js" defer></script>
 </head>
 <body>
     <form>
@@ -13,15 +14,6 @@
         <textarea id="comentarios" rows="10" cols="60"></textarea><br>
         <input type="button" value="Enviar" onClick="EnviarDatos()">
     </form>
-
-    <script>
-        function EnviarDatos() {
-            let nombre = document.getElementById("nombre").value;
-            let mail = document.getElementById("mail").value;
-            let comentarios = document.getElementById("comentarios").value;
-            alert(nombre + "\n" + mail + "\n" + comentarios);
-        }
-    </script>
 
 </body>
 </html>
